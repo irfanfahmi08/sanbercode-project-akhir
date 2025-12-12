@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   env: {
-    baseUrl: "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+    baseUrl: "https://opensource-demo.orangehrmlive.com/web/index.php"
   },
   e2e: {
     setupNodeEvents(on, config) {
