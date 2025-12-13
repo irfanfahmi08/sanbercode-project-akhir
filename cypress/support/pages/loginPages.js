@@ -5,7 +5,9 @@ class LoginPages {
 
     visit() {
         cy.visit(this.baseUrl);
-        cy.contains("Login").should("be.visible");
+        cy.get("body", { timeout: 10000 }).should("be.visible");
+        cy.get("div.orangehrm-login-form").should("be.visible");
+        cy.get(".oxd-text.oxd-text--h5.orangehrm-login-title").should("be.visible");
     }
 
     submitBtn() {
@@ -14,7 +16,7 @@ class LoginPages {
 
     fillUsername(username) {
         if (username !== "") {
-            cy.get("input[placeholder='Username']")
+            cy.get("input[placeholder='Username']", { timeout: 10000 })
                 .type(username)
                 .should("have.value", username);
         }
@@ -97,6 +99,10 @@ class LoginPages {
 
     cancelBtn() {
         return cy.get(".orangehrm-forgot-password-button--cancel").click()
+    }
+
+    selectors(selector) {
+        return cy.get(selector).should("be.visible")
     }
 }
 

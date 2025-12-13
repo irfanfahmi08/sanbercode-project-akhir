@@ -3,6 +3,6 @@
     "cy:open": "cypress open"
   },
   "dependencies": {
-    "cypress": "^14.0.2"
+    "cypress": "^15.7.1"
   }
 }
