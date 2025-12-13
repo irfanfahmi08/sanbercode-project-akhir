@@ -1,4 +1,4 @@
-# 📌 Sanbercode Project Akhir – Cypress Automation Testing
+# 📌 Sanbercode Project Akhir – Cypress Automation Testing - OrangeHRM
 
 ## ✨ Deskripsi
 
